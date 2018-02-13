@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 class WeatherList extends Component {
   renderWeather(cityData){
+    if(!cityData) return;
     const name = cityData.city.name;
     return (
       <tr key={name}>
