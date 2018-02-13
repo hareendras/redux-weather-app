@@ -11,8 +11,7 @@ class SearchBar extends Component {
         this.onFormSubmit = this.onFormSubmit.bind(this);
     }
 
-    onInputChange(event) {
-        console.log(event.target.value);
+    onInputChange(event) {        
         this.setState({ term: event.target.value });
     }
 
